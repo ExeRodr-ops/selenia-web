@@ -1,0 +1,25 @@
+COMPLEJO SELENIA - carpeta de la página
+=======================================
+
+Contenido
+  index.html   la página. Solo se edita la "ZONA DE EDICIÓN" (arriba del <script>, al final del archivo).
+  fotos/       las fotos que usa la página.
+
+CÓMO CAMBIAR COSAS
+- Precio: PRECIO_POR_DIA en la zona de edición (0 = muestra "Consultar").
+- WhatsApp, teléfono, dirección: mismas líneas de la zona de edición.
+- Cambiar una foto: reemplazar el archivo dentro de fotos/ con el MISMO nombre.
+  Ideal: JPG de unos 1400 px de ancho y menos de 300 KB.
+- Agregar una foto: ponerla en fotos/ y sumar una línea en FOTOS.
+- Pasar de demo a versión final: MODO_DEMO = false (saca los avisos de "demo").
+
+ANTES DE PUBLICAR
+- Confirmar que el 2954-627178 sea WhatsApp.
+- Completar la dirección con el número de calle.
+- Conseguir las fotos originales y el permiso para usarlas.
+- Confirmar con ellos: aire acondicionado, cocina con horno y heladera.
+- No publicar con su nombre sin su OK.
+
+CÓMO PUBLICAR (gratis)
+1. Cloudflare Pages o Netlify: crear un proyecto nuevo y subir esta carpeta completa (arrastrar y soltar).
+2. Para actualizar algo: cambiar el archivo y volver a subir la carpeta.

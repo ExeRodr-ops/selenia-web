@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Complejo Selenia | Departamentos por día en Santa Rosa</title>
+<meta name="description" content="Departamentos por día en Santa Rosa, La Pampa. Equipados, hasta 4 personas, aceptan mascotas pequeñas. Reservá directo por WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%234a2250'/%3E%3Cpath d='M38 14a18 18 0 1 0 12 30A22 22 0 0 1 38 14z' fill='%23ffd9a8'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#fffaf3;--ink:#2a2019;--muted:#6b5d52;--accent:#d9822b;--accent-d:#a85f14;--wine:#4a2250;--line:#eadfce;--wa:#1faa59;--r:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:18px;scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.wrap{width:min(1040px,100% - 32px);margin-inline:auto}
+
+.demo-bar{background:var(--wine);color:#fff;font-size:.74rem;text-align:center;padding:7px 12px}
+.demo-bar b{color:#ffd9a8}
+
+.bar{position:sticky;top:0;z-index:20;background:rgba(255,250,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+.brand i{width:34px;height:34px;border-radius:50%;background:var(--wine);display:grid;place-items:center}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;background:var(--wa);color:#fff;border:0;cursor:pointer}
+.btn.sm{padding:10px 18px;font-size:.92rem}
+.btn.line{background:transparent;color:var(--accent-d);border:2px solid var(--accent)}
+.btn:active{transform:scale(.98)}
+
+.hero{position:relative;min-height:min(78vh,560px);display:flex;align-items:flex-end;color:#fff;background:#2a2019 center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,18,10,.94),rgba(30,18,10,.62) 55%,rgba(30,18,10,.25))}
+.hero .wrap{position:relative;padding:60px 0 88px}
+.kicker{display:inline-block;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#ffd9a8;margin-bottom:10px}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.1rem,6.5vw,3.6rem);line-height:1.1;max-width:16ch}
+.hero p{max-width:46ch;margin:14px 0 24px;font-size:1.1rem;opacity:.95}
+
+.facts{position:relative;margin-top:-52px;z-index:2}
+.facts ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:var(--r);box-shadow:0 12px 32px rgba(60,35,10,.14);border:1px solid var(--line);overflow:hidden}
+.facts li{padding:18px 10px;text-align:center;border-right:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.facts li:last-child{border-right:0}
+.facts b{display:block;font-size:1.1rem;color:var(--ink)}
+@media(max-width:640px){
+  .facts ul{grid-template-columns:repeat(2,1fr)}
+  .facts li{border-bottom:1px solid var(--line)}
+  .facts li:nth-child(2n){border-right:0}
+  .facts li:nth-last-child(-n+2){border-bottom:0}
+}
+
+section{padding:60px 0 4px}
+.eyebrow{color:var(--accent-d);font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2;margin:6px 0 8px}
+.sub{color:var(--muted);margin-bottom:22px;max-width:56ch}
+
+.checks{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 32px}
+.checks li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+.checks li::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem;margin-top:2px}
+
+.mosaic{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mosaic button{border:0;padding:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:#ddd;aspect-ratio:4/3}
+.mosaic button:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.mosaic img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
+.mosaic button:hover img{transform:scale(1.04)}
+@media(max-width:640px){
+  .mosaic{grid-template-columns:repeat(2,1fr)}
+  .mosaic button:first-child{grid-column:auto;grid-row:auto;aspect-ratio:4/3}
+}
+
+.price-card{background:var(--wine);color:#fff;border-radius:var(--r);padding:34px 24px;display:grid;gap:6px;text-align:center;justify-items:center}
+.price-card .big{font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;font-weight:700;color:#ffd9a8;line-height:1.1}
+.price-card small{opacity:.85}
+.price-card .btn{margin-top:14px}
+
+.loc{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;align-items:stretch}
+@media(max-width:760px){.loc{grid-template-columns:1fr}}
+.info{display:grid;gap:14px;align-content:start}
+.info p{display:flex;gap:10px}
+.info .btn{justify-self:start}
+.loc iframe{width:100%;min-height:320px;height:100%;border:0;border-radius:var(--r);background:#eee}
+
+footer{margin-top:60px;background:var(--ink);color:#d8cdc0;text-align:center;padding:26px 16px;font-size:.82rem}
+footer b{color:#fff;font-family:Georgia,serif;font-size:1.05rem}
+
+.wa-float{position:fixed;right:16px;bottom:16px;z-index:30;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.9);display:none;place-items:center;padding:14px}
+.lb.on{display:grid}
+.lb img{max-width:100%;max-height:88vh;border-radius:12px}
+.lb span{position:absolute;top:12px;right:20px;color:#fff;font-size:2.4rem;line-height:1;cursor:pointer}
+</style>
+</head>
+<body>
+
+<div class="demo-bar" id="demo-bar">🛠️ <b>Propuesta de diseño (demo)</b> · Fotos tomadas de su Facebook · Precios a confirmar · Diseño: Exequiel Rodríguez</div>
+
+<div class="bar"><div class="wrap">
+  <a class="brand" href="#inicio"><i><svg width="18" height="18" viewBox="0 0 64 64"><path d="M38 8a24 24 0 1 0 18 40A28 28 0 0 1 38 8z" fill="#ffd9a8"/></svg></i>Complejo Selenia</a>
+  <a class="btn sm" data-wa="Hola! Quiero consultar disponibilidad" target="_blank" rel="noopener">💬 Reservar</a>
+</div></div>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <span class="kicker">Departamentos por día · Santa Rosa, La Pampa</span>
+    <h1>Un lugar cómodo para descansar</h1>
+    <p>Departamentos equipados para hasta 4 personas. Mirá las fotos y reservá directo por WhatsApp.</p>
+    <a class="btn" data-wa="Hola! Quiero consultar disponibilidad" target="_blank" rel="noopener">💬 Consultar disponibilidad</a>
+  </div>
+</header>
+
+<div class="facts wrap">
+  <ul>
+    <li><b>👥 4</b>personas</li>
+    <li><b>🕛 12:00</b>ingreso</li>
+    <li><b>🕙 10:00</b>salida</li>
+    <li><b>🐶 Sí</b>mascotas chicas</li>
+  </ul>
+</div>
+
+<main>
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Incluye</span>
+    <h2>Todo listo para que solo llegues</h2>
+    <p class="sub">Departamentos totalmente equipados y amoblados.</p>
+    <ul class="checks">
+      <li>Servicio de ropa blanca</li>
+      <li>Vajilla completa, microondas, cafetera y pava eléctrica</li>
+      <li>Cocina con horno y heladera</li>
+      <li>Aire acondicionado</li>
+      <li>Desayuno seco disponible en el departamento</li>
+      <li>TV LED 32", Wi-Fi, Netflix, Disney y YouTube Premium</li>
+      <li>Aceptamos mascotas pequeñas</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Fotos</span>
+    <h2>Conocé el departamento</h2>
+    <p class="sub">Tocá una foto para verla más grande.</p>
+    <div class="mosaic" id="mosaic"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="price-card">
+      <span>Precio y disponibilidad</span>
+      <div class="big" id="precio"></div>
+      <small id="precio-nota"></small>
+      <a class="btn" data-wa="Hola! Quiero reservar el departamento" target="_blank" rel="noopener">💬 Reservar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Ubicación</span>
+    <h2>Cómo llegar</h2>
+    <div class="loc">
+      <div class="info">
+        <p>📍 <span><strong>Dirección</strong><br><span id="dir"></span></span></p>
+        <p>🕛 <span><strong>Ingreso</strong> 12:00 hs · <strong>Salida</strong> 10:00 hs</span></p>
+        <p>📞 <span><strong>Consultas y reservas</strong><br><span id="tel"></span></span></p>
+        <a class="btn line" id="como-llegar" target="_blank" rel="noopener">🧭 Abrir en Google Maps</a>
+      </div>
+      <iframe id="mapa" title="Mapa con la ubicación del Complejo Selenia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <b>Complejo Selenia</b><br>Departamentos por día · Santa Rosa, La Pampa<br>
+  <small>© 2026 Complejo Selenia</small><br><small id="demo-nota">Demo de diseño creada por Exequiel Rodríguez · Contenido sujeto a confirmación</small>
+</footer>
+
+<a class="wa-float" data-wa="Hola! Quiero consultar disponibilidad" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="#fff"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 23.7a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 1 1 16 26.700zm5.800-7.900c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.2-.7.1a8.700 8.700 0 0 1-4.300-3.800c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.4 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2 .8 2.800.9 3.800.7a3.200 3.200 0 0 0 2.100-1.500 2.600 2.600 0 0 0 .2-1.500c-.1-.1-.3-.2-.7-.4z"/></svg>
+</a>
+
+<div class="lb" id="lb"><span>&times;</span><img alt=""></div>
+
+<script>
+/* ============================================================
+   ✏️ ZONA DE EDICIÓN — es lo único que hay que tocar.
+   Para cambiar el precio, modificá solo el número de PRECIO_POR_DIA.
+   (Si queda en 0, la página muestra "Consultar".)
+   ============================================================ */
+const WHATSAPP = "5492954627178";      // 549 + código de área + número (confirmar que sea WhatsApp)
+const TELEFONO = "2954-627178";
+const DIRECCION = "Leguizamón, L6304 Santa Rosa, La Pampa";
+const PRECIO_POR_DIA = 0;              // 0 = la página muestra "Consultar"
+const MODO_DEMO = false;                // poner false cuando sea la versión final (saca los avisos de "demo")
+
+// FOTOS: están en la carpeta "fotos".
+//  - Para cambiar una foto: reemplazá el archivo con el MISMO nombre.
+//  - Para agregar una: ponela en la carpeta y sumá una línea acá.
+//  - La que tiene portada: true es la foto grande del principio.
+const FOTOS = [
+  { archivo: "living-comedor.jpg",     alt: "Living-comedor con TV, microondas y cocina" },
+  { archivo: "dormitorio.jpg",         alt: "Dormitorio con cama matrimonial, cucheta y sillón" },
+  { archivo: "dormitorio-placard.jpg", alt: "Dormitorio con placard y ropa blanca" },
+  { archivo: "comedor.jpg",            alt: "Comedor con aire acondicionado y mesa para 4", portada: true },
+  { archivo: "cocina.jpg",             alt: "Cocina con horno, pava eléctrica y vajilla" },
+  { archivo: "bano.jpg",               alt: "Baño con bacha, espejo y accesorios" }
+];
+/* ============================================================ */
+
+FOTOS.forEach(f => f.src = "fotos/" + f.archivo);
+if (!MODO_DEMO) { document.getElementById("demo-bar").remove(); document.getElementById("demo-nota").remove(); }
+
+const wa = t => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+document.querySelectorAll("a[data-wa]").forEach(a => a.href = wa(a.dataset.wa));
+
+const portada = FOTOS.find(f => f.portada) || FOTOS[0];
+document.getElementById("inicio").style.backgroundImage = `url(${portada.src})`;
+
+document.getElementById("mosaic").innerHTML = FOTOS.map((f, i) =>
+  `<button type="button" data-i="${i}" aria-label="Ampliar foto: ${f.alt}"><img src="${f.src}" alt="${f.alt}" loading="lazy"></button>`).join("");
+const lb = document.getElementById("lb"), lbImg = lb.querySelector("img");
+document.getElementById("mosaic").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const f = FOTOS[+b.dataset.i]; lbImg.src = f.src; lbImg.alt = f.alt; lb.classList.add("on");
+});
+lb.addEventListener("click", () => lb.classList.remove("on"));
+document.addEventListener("keydown", e => { if (e.key === "Escape") lb.classList.remove("on"); });
+
+const conPrecio = PRECIO_POR_DIA > 0;
+document.getElementById("precio").textContent = conPrecio ? "$ " + PRECIO_POR_DIA.toLocaleString("es-AR") : "Consultar";
+document.getElementById("precio-nota").textContent = conPrecio ? "Por día · consultá fechas disponibles" : "Escribinos y te pasamos precio y fechas disponibles";
+
+document.getElementById("dir").textContent = DIRECCION;
+document.getElementById("tel").textContent = TELEFONO;
+const q = encodeURIComponent(DIRECCION + ", Argentina");
+document.getElementById("mapa").src = `https://www.google.com/maps?q=${q}&output=embed`;
+document.getElementById("como-llegar").href = `https://www.google.com/maps/search/?api=1&query=${q}`;
+</script>
+</body>
+</html>
